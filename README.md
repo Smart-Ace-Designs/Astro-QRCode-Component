@@ -19,9 +19,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-To be added...
-
-![](./screenshot.jpg)
+![qrcode-component](https://github.com/Smart-Ace-Designs/Astro-QRCode-Component/assets/132539186/7c3bb672-0c85-4469-98ca-9611759b22a8)
 
 ### Links
 
