@@ -1,11 +1,15 @@
 ---
-// import { Image } from "astro:assets";
+import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
+
+import qrcode from "@/assets/image-qr-code.png";
 ---
 
 <MainLayout title="Frontend Mentor | QR code component">
   <div>
     <div>
+      <Image src={qrcode} alt="QR Code" loading={"eager"} />
+
       <div>
         <h1>Improve your front-end skills by building projects</h1>
         <p>
