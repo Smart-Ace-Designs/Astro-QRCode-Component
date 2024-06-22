@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  title: string;
+  content: string;
+  image: string;
+  alt: string;
+}
+const { title, content, image, alt } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>("@/assets/*.png");
+
+if (!images[image])
+  throw new Error(`"${image}" does not exist in glob: "@/assets/*.png}"`);
+---
+
+<div class="bg-qrWhite rounded-2xl p-4">
+  <Image
+    src={images[image]()}
+    alt={alt}
+    loading={"eager"}
+    class="mb-6 rounded-xl"
+  />
+  <div class="mx-6">
+    <h1 class="text-qrDarkBlue mb-4 text-center text-2xl font-bold">
+      {title}
+    </h1>
+    <p class="text-qrGrayishBblue mb-6 text-center text-[15px] leading-5">
+      {content}
+    </p>
+  </div>
+</div>
