@@ -6,13 +6,19 @@ import qrcode from "@/assets/image-qr-code.png";
 ---
 
 <MainLayout title="Frontend Mentor | QR code component">
-  <div>
-    <div>
-      <Image src={qrcode} alt="QR Code" loading={"eager"} />
-
-      <div>
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>
+  <div class="mx-auto flex h-screen max-w-[360px] items-center">
+    <div class="bg-qrWhite rounded-2xl p-4">
+      <Image
+        src={qrcode}
+        alt="QR Code"
+        loading={"eager"}
+        class="mb-6 rounded-xl"
+      />
+      <div class="mx-6">
+        <h1 class="text-qrDarkBlue mb-4 text-center text-2xl font-bold">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="text-qrGrayishBblue mb-6 text-center text-[15px] leading-5">
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
