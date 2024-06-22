@@ -1,125 +1,103 @@
-# Astro Template: Major Tom
+# Frontend Mentor - QR code component solution
 
-An opinionated Astro template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases.
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-```sh
-npm create astro@latest -- --template smart-ace-designs/astro-major-tom project-name
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
+
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
+### What I learned
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
 ```
-
-```powershell
-# Example PowerShell function to provide more granular control of deploying a new Astro project with this template using bun or npm.
-# Add to your PowerShell profile or custom PowerShell module.
-
-function New-AstroProject
-{
-    [CmdletBinding()]
-    Param
-    (
-        [Parameter(Mandatory = $true)] [string]$ProjectName,
-        [Parameter(Mandatory = $true)] [string]$Location,
-        [Parameter(Mandatory = $false)] [switch]$StartCode,
-        [Parameter(Mandatory = $false)] [switch]$StartApp,
-        [Parameter(Mandatory = $false)] [ValidateSet("bun", "npm")] [string]$PackageManager = "bun",
-    )
-
-    switch ($PackageManager)
-    {
-        "bun" {$PMX = "bunx"}
-        "npm" {$PMX = "npx"}
-    }
-
-    Clear-Host
-    $Message = "Astro Deployment Tool"
-    $Width = $Host.UI.RawUI.WindowSize.Width
-    Write-Host
-    Write-Host ((" " * ($Width - $Message.Length)) + $Message) -ForegroundColor Green
-    Write-Host ("=" * $Width)
-    if (!(Test-Path -Path "$Location\$ProjectName"))
-    {
-        Set-Location $Location
-        # Currently bunx is unable to create a new Astro project and npx must be used in the interim until this is resolved.
-        # & $PMX create-astro@latest -- --template smart-ace-designs/astro-major-tom --typescript strict --no-install --no-git $ProjectName
-        npx create-astro@latest -- --template smart-ace-designs/astro-major-tom --typescript strict --no-install --git $ProjectName
-
-        if (Test-Path -Path $ProjectName)
-        {
-            Set-Location $ProjectName
-            [void](New-Item -Name "components" -Path src -ItemType Directory)
-            Write-Host
-            switch ($PackageManager)
-            {
-                "bun" {& $PackageManager install --no-summary}
-                "npm" {& $PackageManager install --silent}
-            }
-            & $PMX @astrojs/upgrade
-            & $PackageManager update tailwindcss prettier prettier-plugin-astro prettier-plugin-tailwindcss --silent
-            Write-Host
-            & $PMX prettier . --write --log-level silent
-            & $PMX prettier . --check
-            if ($StartCode -and (Get-Command code -ErrorAction SilentlyContinue)) {code .}
-            Write-Host
-            Write-Host ("=" * $Width)
-            if ($StartApp) {& $PackageManager run dev}
-        }
-        else
-        {
-            Write-Host "`nProject folder ($ProjectName) was not created.  Operation cancelled...liftoff failed!"
-        }
-    }
-    else
-    {
-        Write-Host "`nProject folder ($ProjectName) already exists.  Operation cancelled...liftoff failed!"
-    }
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
 }
 ```
 
-https://github.com/Smart-Ace-Designs/Astro-Major-Tom/assets/132539186/7d31d752-f728-49bb-a1cf-8c3708d05482
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-## Project Structure
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
-Inside of your Astro project, you'll see the following folders and files:
+### Continued development
 
-```text
-/
-├── .vscode/
-│       └── extensions.json
-│       └── launch.json
-│       └── settings.json
-├── public/
-│       └── favicon.svg
-├── src/
-|   ├── layouts/
-│       └── MainLayout.astro
-│   ├── pages/
-│       └── index.astro
-|   └── env.d.ts
-├── .gitignore
-├── astro.config.mjs
-├── package.json
-├── README.md
-├── tailwind.config.mjs
-└── tsconfig.json
-```
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-Astro/React/Vue/Svelte/Preact components are put in `src/components/` by convention.
+### Useful resources
 
-Any static assets, like images, can be placed in the `public/` directory.
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-## Commands
+**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
-All commands are run from the root of the project, from a terminal:
+## Author
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-## Additional Information
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
