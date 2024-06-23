@@ -23,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Smart-Ace-Designs/Astro-QRCode-Component)
+- Live Site URL: [Netlify](https://smartacedesigns-astro-qrcode-comp.netlify.app/)
 
 ## My process
 
@@ -41,7 +41,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - How to center items both vertically and horizontally.
 - How to add custom colors to Tailwind CSS by adding it to the `extend` object in the "tailwind.config.mjs" file.
 - How to add a custom font family to Tailwind CSS by creating custom style sheet file to import the font and then by adding it to the `extend` object in the "tailwind.config.mjs" file.
-- How to use Bun
+- Bun
+- Astro components
+- Astro `<Image>` and dynamic image importing
 
 ### Continued development
 
