@@ -14,7 +14,7 @@ if (!images[image])
   throw new Error(`"${image}" does not exist in glob: "@/assets/*.png}"`);
 ---
 
-<div class="bg-qrWhite rounded-2xl p-4">
+<div class="bg-theme-white rounded-2xl p-4">
   <Image
     src={images[image]()}
     alt={alt}
@@ -22,10 +22,10 @@ if (!images[image])
     class="mb-6 rounded-xl"
   />
   <div class="mx-6">
-    <h1 class="text-qrDarkBlue mb-4 text-center text-2xl font-bold">
+    <h1 class="text-theme-dark-blue mb-4 text-center text-2xl font-bold">
       {title}
     </h1>
-    <p class="text-qrGrayishBblue mb-6 text-center text-[15px] leading-5">
+    <p class="text-theme-grayish-blue mb-6 text-center text-[15px] leading-5">
       {content}
     </p>
   </div>

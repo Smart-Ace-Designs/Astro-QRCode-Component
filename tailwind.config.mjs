@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        qrWhite: "hsl(0, 0%, 100%)",
-        qrLightGray: "hsl(212, 45%, 89%)",
-        qrGrayishBblue: "hsl(220, 15%, 55%)",
-        qrDarkBlue: "hsl(218, 44%, 22%)",
+        "theme-white": "hsl(0, 0%, 100%)",
+        "theme-light-gray": "hsl(212, 45%, 89%)",
+        "theme-grayish-blue": "hsl(220, 15%, 55%)",
+        "theme-dark-blue": "hsl(218, 44%, 22%)",
       },
       fontFamily: {
-        qrBody: ["Outfit"],
+        outfit: ["outfit", "sans-serif"],
       },
     },
   },
