@@ -10,7 +10,7 @@ export default {
         "theme-dark-blue": "hsl(218, 44%, 22%)",
       },
       fontFamily: {
-        outfit: ["outfit", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
       },
     },
   },
