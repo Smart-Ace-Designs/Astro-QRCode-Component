@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400 700;
-  src: url("/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
-}
-
 @theme {
   --color-theme-white: hsl(0, 0%, 100%);
   --color-theme-light-gray: hsl(212, 45%, 89%);
@@ -23,5 +16,12 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400 700;
+    src: url("/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
   }
 }
