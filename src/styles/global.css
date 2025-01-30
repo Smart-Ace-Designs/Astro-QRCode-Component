@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap")
-layer(base);
-
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+}
 
 @theme {
   --color-theme-white: hsl(0, 0%, 100%);
