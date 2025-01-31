@@ -23,5 +23,6 @@
     font-style: normal;
     font-weight: 400 700;
     src: url("/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
   }
 }
