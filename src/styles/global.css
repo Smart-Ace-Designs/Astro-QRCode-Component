@@ -6,6 +6,16 @@
   --color-theme-slate-500: hsl(220, 15%, 55%);
   --color-theme-slate-900: hsl(218, 44%, 22%);
 
+  --font-outfit: Outfit, sans-serif;
+
+  --leading-theme-preset1: 1.2;
+  --leading-theme-preset2: 1.4;
+
+  --radius-theme-lg: 20px;
+  --radius-theme-sm: 10px;
+
+  --shadow-theme-card: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
+
   --spacing-theme-200: 16px;
   --spacing-theme-300: 24px;
   --spacing-theme-500: 40px;
@@ -13,16 +23,8 @@
   --text-theme-preset1: 1.375rem;
   --text-theme-preset2: 0.9375rem;
 
-  --leading-theme-preset1: 1.2;
-  --leading-theme-preset2: 1.4;
-
   --tracking-theme-preset1: 0em;
   --tracking-theme-preset2: 0.0125em;
-
-  --radius-theme-lg: 20px;
-  --radius-theme-sm: 10px;
-
-  --font-outfit: Outfit, sans-serif;
 }
 
 @font-face {
