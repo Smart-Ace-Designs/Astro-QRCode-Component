@@ -14,19 +14,29 @@ if (!images[image])
   throw new Error(`"${image}" does not exist in glob: "@/assets/*.png}"`);
 ---
 
-<div class="bg-theme-white rounded-2xl p-4">
-  <Image
-    src={images[image]()}
-    alt={alt}
-    loading={"eager"}
-    class="mb-6 rounded-xl"
-  />
-  <div class="mx-6">
-    <h1 class="text-theme-dark-blue mb-4 text-center text-2xl font-bold">
+<article
+  class="bg-theme-white pt-theme-200 px-theme-200 pb-theme-500 rounded-theme-lg w-xs"
+>
+  <div class="rounded-theme-sm aspect-square overflow-hidden">
+    <Image
+      src={images[image]()}
+      alt={alt}
+      loading={"eager"}
+      width={288}
+      height={288}
+      class="block h-full w-full object-cover"
+    />
+  </div>
+  <div class="px-theme-200 mt-theme-300 text-center">
+    <h2
+      class="text-theme-slate-900 text-theme-preset1 leading-theme-preset1 tracking-theme-preset1 font-bold"
+    >
       {title}
-    </h1>
-    <p class="text-theme-grayish-blue mb-6 text-center text-[15px] leading-5">
+    </h2>
+    <p
+      class="text-theme-slate-500 text-theme-preset2 leading-theme-preset2 mt-theme-200 tracking-theme-preset2"
+    >
       {content}
     </p>
   </div>
-</div>
+</article>
