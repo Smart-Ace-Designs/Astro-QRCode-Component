@@ -4,14 +4,14 @@
     "": {
       "name": "qrcode-component",
       "dependencies": {
-        "@tailwindcss/vite": "latest",
-        "astro": "latest",
-        "tailwindcss": "latest",
+        "@tailwindcss/vite": "^4.1.14",
+        "astro": "5.14.5",
+        "tailwindcss": "^4.1.14",
       },
       "devDependencies": {
-        "prettier": "latest",
-        "prettier-plugin-astro": "latest",
-        "prettier-plugin-tailwindcss": "latest",
+        "prettier": "^3.6.2",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.7.0",
       },
     },
   },
