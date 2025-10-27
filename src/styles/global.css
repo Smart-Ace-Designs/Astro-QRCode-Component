@@ -27,10 +27,10 @@
   --tracking-theme-preset2: 0.0125em;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400 700;
   src: url("/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
   font-display: swap;
-}
+} */
