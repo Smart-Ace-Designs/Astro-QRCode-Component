@@ -15,9 +15,9 @@ if (!images[image])
 ---
 
 <article
-  class="bg-theme-white pt-theme-200 px-theme-200 pb-theme-500 rounded-theme-lg shadow-theme-card w-xs"
+  class="w-xs rounded-theme-lg bg-theme-white px-theme-200 pt-theme-200 pb-theme-500 shadow-theme-card"
 >
-  <div class="rounded-theme-sm aspect-square overflow-hidden">
+  <div class="aspect-square overflow-hidden rounded-theme-sm">
     <Image
       src={images[image]()}
       alt={alt}
@@ -27,14 +27,14 @@ if (!images[image])
       class="block h-full w-full object-cover"
     />
   </div>
-  <div class="px-theme-200 mt-theme-300 text-center">
+  <div class="mt-theme-300 px-theme-200 text-center">
     <h1
-      class="text-theme-slate-900 text-theme-preset1 leading-theme-preset1 tracking-theme-preset1 font-bold"
+      class="text-theme-preset1 leading-theme-preset1 font-bold tracking-theme-preset1 text-theme-slate-900"
     >
       {title}
     </h1>
     <p
-      class="text-theme-slate-500 text-theme-preset2 leading-theme-preset2 mt-theme-200 tracking-theme-preset2"
+      class="mt-theme-200 text-theme-preset2 leading-theme-preset2 tracking-theme-preset2 text-theme-slate-500"
     >
       {content}
     </p>
