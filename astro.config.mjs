@@ -16,6 +16,7 @@ export default defineConfig({
         name: "Outfit",
         cssVariable: "--font-outfit",
         weights: [400, 700],
+        styles: ["normal"],
       },
     ],
   },
