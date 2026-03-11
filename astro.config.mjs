@@ -8,15 +8,13 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Outfit",
-        cssVariable: "--font-outfit",
-        weights: [400, 700],
-        styles: ["normal"],
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Outfit",
+      cssVariable: "--font-outfit",
+      weights: [400, 700],
+      styles: ["normal"],
+    },
+  ],
 });
