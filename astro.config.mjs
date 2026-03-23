@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: "https://smart-ace-designs.github.io",
-  base: "/bob",
+  base: "/Astro-QRCode-Component",
   vite: {
     plugins: [tailwindcss()],
   },
